@@ -5,7 +5,7 @@
            <input type="text" ng-model="query.input" placeholder="Search in Booklistic Market" style="margin-left:5%;"/>
           </label>
 	</div>
-    <div ng-repeat="book in content" id="buyitem">
+    <div ng-repeat="book in content | filter:query.input" id="buyitem">
         <div class="item">
             <i class="badgeJohnson">{{book.title}}</i>
             <p class="text" style="color:#F7FF00;">
