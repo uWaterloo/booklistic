@@ -23,8 +23,8 @@
 }
 .circlebutton{
     border-radius:50%;
-    background-color:orange;
-    color:red;
+    background-color:red;
+    color:white;
     font-weight:bold; 
     height:50px;
     font-size:50px;
