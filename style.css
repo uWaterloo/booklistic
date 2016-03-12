@@ -32,10 +32,10 @@
     text-align:center;
     border:1px solid red;
     line-height:45px;
-    right:5%;
     float:right;
+    position:relative;
+    right:5%;
     top:45px;
-    position:absolute;
 }
 .item{
 	background-color:grey;

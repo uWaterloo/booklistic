@@ -34,11 +34,9 @@ angular.module('portalApp')
             }
   		});  
         $scope.setPrice=function(){
-        	alert("hello");
             var price = prompt("Please set a price you want to sell");
     		if (price != null && price >= 0) {
-                alert("You have set the price to be $");
-                alert(price);
+                alert("You have set the price to be $" + price);
     		} else {
             	alert("The price you entered is not a valid price");
             }
