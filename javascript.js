@@ -17,27 +17,14 @@ angular.module('portalApp')
 
         // Show main view in the first column
         $scope.portalHelpers.showView('main.html', 1);
-
-        $scope.headertext = 'Buy';
-        $scope.tab = function(scenario) {
-            var sellitem = document.getElementById('sellitem');
-            var mybookitem = document.getElementById('mybookitem');
-            var buyitem = document.getElementById('buyitem');
+ 
+        $scope.tab = function(scenario) { 
             if (scenario == 'sell') {
-                $scope.headertext = 'Sell';  
-                angular.element('sellitem').css('display','block');
-                angular.element('buyitem').css('display','none');
-                angular.element('mybookitem').css('display','none');
-            } else if (scenario == 'mybook') {
-                $scope.headertext = 'My Book';
-                angular.element('sellitem').css('display','none');
-                angular.element('buyitem').css('display','none');
-                angular.element('mybookitem').css('display','block');
-            } else if (scenario == 'buy') {
-                $scope.headertext = 'Buy';
-                angular.element('sellitem').css('display','none');
-                angular.element('buyitem').css('display','block');
-                angular.element('mybookitem').css('display','none');
+                 $scope.portalHelpers.showView("sell.html", 2);
+            } else if (scenario == 'mybook') { 
+                $scope.portalHelpers.showView("mybook.html", 2);
+            } else if (scenario == 'buy') { 
+                $scope.portalHelpers.showView("main.html", 2);
             }
         }
       $scope.content= [{
