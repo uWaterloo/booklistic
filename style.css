@@ -11,7 +11,8 @@
     display: block;
     z-index:1000;
     border-radius: 50%; 
-    width: 20%;
+    width: 155px;
+    height: 150px;
     border: 2px solid #f8f8f8; 
     box-shadow: 0 0 0 3px #43cee6;
     margin-left: auto;
