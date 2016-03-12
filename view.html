@@ -1,22 +1,17 @@
-<script type="text/ng-template" id="main.html"> 
-        <widget-row>
-            <widget-cell>
-                <h2>Hello</h2>
-            </widget-cell>
-        </widget-row>
-
-		<widget-row>
-            <widget-cell>
-                <h2>{{data.value.message}}</h2>
-            </widget-cell>
-        </widget-row>
+<script type="text/ng-template" id="main.html">
+	<div id="header">{{headertext}}</div> 
+    <div ng-repeat="book in content">
+        <div class="item">
+            {{book.title}}
+        </div>
+	</div>
 </script>
 
 <!-- Menu template -->
 <script type="text/ng-template" id="widgetMenu.html">
     <li>
-        <a>
-            Menu button
-        </a>
+        <a ng-click="tab('buy')">Buy</a>
+        <a ng-click="tab('sell')">Sell</a>
+        <a ng-click="tab('mybook')">My Book</a>
     </li>
 </script>
