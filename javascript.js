@@ -52,7 +52,11 @@ angular.module('portalApp')
             	$scope.portalHelpers.showView("payment.html", 1);
             }
         }
-      $scope.content= [{
+    $scope.portalHelpers.invokeServerFunction('getUserName').then(function(data){
+        // Code to run after execution completes
+        $scope.userName = data;
+    });
+    $scope.content= [{
     author: 'Bella Forrest',
     title: 'ESSENTIALS OF ENGLISH',
     course:'EMLS 129R',
