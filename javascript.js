@@ -33,7 +33,7 @@ angular.module('portalApp')
     title: 'ESSENTIALS OF ENGLISH',
     course:'EMLS 129R',
     status:'inhand',
-    image:'img/english.png',
+    image:'http://ecx.images-amazon.com/images/I/51TZoV3kJ8L._SX331_BO1,204,203,200_.jpg',
     SKU: '9780131500907',
     originalPrice: 59.95,
     "listing": [
@@ -67,7 +67,7 @@ angular.module('portalApp')
     title: 'CALCULUS : A COMPLETE COURSE W/ MYMATHLAB 8ED',
     course:'SYDE 112 ',
     status:'listed',
-    image:'img/calculus.png',
+    image:'http://ecx.images-amazon.com/images/I/61t62mzguXL._SX377_BO1,204,203,200_.jpg',
     SKU: '9780321880215',
     originalPrice: 59.95,
     "listing": [
@@ -84,8 +84,7 @@ angular.module('portalApp')
     title: 'SOLID STATE PHYSICS',
     course: 'PHYS 435',
     status: 'sold',
-    image:'img/physics.png',
-    SKU: '9780120530854',
+    image: 'http://www.gatecounsellor.com/books/images/solid-state-physics-e1-9788177098594.jpg',
     originalPrice: 213.95,
     "listing": [
     {"Name":"John Doe", "Price":"11.00"},
