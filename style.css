@@ -38,3 +38,6 @@
     overflow:hidden;
     text-overflow:ellipsis;
 }
+.images {
+    width: 12%;
+}

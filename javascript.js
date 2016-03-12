@@ -37,7 +37,7 @@ angular.module('portalApp')
     title: 'ESSENTIALS OF ENGLISH',
     course:'EMLS 129R',
     status:'inhand',
-    image:'img/english.png',
+    image:'http://ecx.images-amazon.com/images/I/51TZoV3kJ8L._SX331_BO1,204,203,200_.jpg',
     SKU: '9780131500907',
     originalPrice: 59.95,
     "listing": [
@@ -71,7 +71,7 @@ angular.module('portalApp')
     title: 'CALCULUS : A COMPLETE COURSE W/ MYMATHLAB 8ED',
     course:'SYDE 112 ',
     status:'listed',
-    image:'img/calculus.png',
+    image:'http://ecx.images-amazon.com/images/I/61t62mzguXL._SX377_BO1,204,203,200_.jpg',
     SKU: '9780321880215',
     originalPrice: 59.95,
     "listing": [
@@ -88,8 +88,7 @@ angular.module('portalApp')
     title: 'SOLID STATE PHYSICS',
     course: 'PHYS 435',
     status: 'sold',
-    image:'img/physics.png',
-    SKU: '9780120530854',
+    image: 'http://www.gatecounsellor.com/books/images/solid-state-physics-e1-9788177098594.jpg',
     originalPrice: 213.95,
     "listing": [
     {"Name":"John Doe", "Price":"11.00"},
@@ -105,7 +104,7 @@ angular.module('portalApp')
     title: ' LINEAR CIRCUITS (1ST CUSTOM ED FOR ECE 140/240)',
     course: 'ECE 140',
     status: 'inhand',
-    image:'img/circuit.png',
+    image:'http://ecx.images-amazon.com/images/I/61dAL%2B%2BkTtL._SX258_BO1,204,203,200_.jpg',
     SKU: '9781259454974',
     originalPrice: 78.95,
     "listing": [
@@ -120,7 +119,7 @@ angular.module('portalApp')
     title: 'ENVIRONMENTAL CHEMISTRY 5ED LOOSELEAF',
     course: 'CHE 571',
     status: 'sold',
-    image:'img/chemistry.png',
+    image:'http://ecx.images-amazon.com/images/I/51IH3EWsaWL._SX408_BO1,204,203,200_.jpg',
     SKU: '9781464125041',
     originalPrice: 118.75,
     "listing": [
@@ -137,7 +136,7 @@ angular.module('portalApp')
     title: ' MSCI 603: INTRODUCTION TO MATHEMATICAL PROGRAMMING',
     course: 'MSCI 603 ',
     status: '------',
-    image:'img/programming.png',
+    image:'http://ecx.images-amazon.com/images/I/41qisU1CwNL._SX398_BO1,204,203,200_.jpg',
     SKU: '281115918211',
     originalPrice: 75.13,
     "listing": [
@@ -154,7 +153,7 @@ angular.module('portalApp')
     title: 'MATHEMATICS FOR BIOLOGICAL SCIENTISTS',
     course: 'PHYS 225 ',
     status: '------',
-    image:'img/math.png',
+    image:'http://ecx.images-amazon.com/images/I/41j6LCf4MfL._SX258_BO1,204,203,200_.jpg',
     SKU: '9780815341369',
     originalPrice: 93.50,
     "listing": [
@@ -171,7 +170,7 @@ angular.module('portalApp')
     title: 'OPERATING SYSTEMS 3ED',
     course: 'MTE 241',
     status: 'listed',
-    image:'img/operatingSystem.png',
+    image:'http://www.giffiks.com/images/books/size_3/9788131712894.jpg',
     SKU: '9780201773446',
     originalPrice: 175.35,
     "listing": [
@@ -188,7 +187,7 @@ angular.module('portalApp')
     title: 'MACROECONOMICS 7TH CDN ED',
     course: 'ECON 202 ',
     status: 'inhand',
-    image:'img/economics.png',
+    image:'http://ecx.images-amazon.com/images/I/51vTWUyOG4L._SX378_BO1,204,203,200_.jpg',
     SKU: '9780321952394',
     originalPrice: 169.95,
     "listing": [
@@ -204,7 +203,7 @@ angular.module('portalApp')
     title: 'E-TEXT FOR ABNORMAL PSYCHOLOGY 4TH CDN (MINDTAP 6-MONTH ACCESS)',
     course: 'PSYCH 257',
     status: 'sold',
-    image:'img/psychology.png',
+    image:'http://ecx.images-amazon.com/images/I/71siqsFAsIL.jpg',
     SKU: '9780176701543',
     originalPrice: 99.95,
     "listing": [
