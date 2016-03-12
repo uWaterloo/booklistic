@@ -17,8 +17,9 @@
     color: #AAAAAA;
     z-index: 1;
     display: inline-block;
+    height: 27px;
     padding: 3px 8px;
-    border-radius: 10px;
+    border-radius: 5px;
     vertical-align: baseline;
     text-align: center;
     white-space: nowrap;
@@ -40,4 +41,6 @@
 }
 .images {
     width: 12%;
+    max-width: 80px;
+    max-height: 80px;
 }
