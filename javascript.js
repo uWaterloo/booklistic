@@ -50,7 +50,7 @@ angular.module('portalApp')
     title: 'LEAP  ADVANCED READING AND WRITING',
     course:'EMLS 129R',
     status:'inhand',
-    image:'img/leap.png',
+    image:'http://www.longmanhomeusa.com/media/book_covers/9782761352284.jpg',
     SKU: '9782761352284',
     originalPrice: 54.95,
     "listing": [
