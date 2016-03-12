@@ -6,8 +6,8 @@
           </label>
 	</div>
     <div ng-repeat="book in content | filter:query.input" id="unique" style="display:none">
-        <div class="circlebutton" style="position:relative;right:5px;">&#43</div>
-        <div class="item" ng-click="tab(book.SKU);">
+        <div class="circlebutton" ng-click="tab(book.SKU);" style="position:relative;right:5px;">&#43</div>
+        <div class="item" >
             <i class="badgeJohnson">{{book.title}}</i>
             <p class="text" style="color:#F7FF00;">
             Course Name: {{book.course}}<br>
@@ -42,7 +42,8 @@
         <div ng-repeat="detail in post" ng-click="tab('payment')">
                 <div class="item item-icon-right" style="background-color:grey;border-bottom:2px solid purple;color:yellow">
                     <i class="badgeJohnson" style="width: 150px">{{detail.Name}}</i>
-                    Price: ${{detail.Price}} 
+                    Price: ${{detail.Price}} <br>
+                    condition: Used
                 </div>
             </div>     
 </script>
@@ -85,8 +86,8 @@
             <br> 
             SKU #: {{content[1].SKU}}
             <br>
-            <div style="color:red;">In Hand </div>
-            Condition: Used
+            <div style="color:red;">In Hand </div> <br>
+                Condition: Used
             </p>
         </div>
         <div class="item">
@@ -97,7 +98,7 @@
             <br> 
             SKU #: {{content[6].SKU}}
             <br>
-            <div style="color:red;">Sold </div>
+            <div style="color:red;">Sold </div><br>
             Condition: Good
             </p>
         </div>
