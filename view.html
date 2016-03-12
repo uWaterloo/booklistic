@@ -5,9 +5,9 @@
            <input type="text" ng-model="query.input" placeholder="Search in Booklistic Market" style="margin-left:5%;"/>
           </label>
 	</div>
-    <div ng-repeat="book in content | filter:query.input" id="unique" ng-click="tab('payment')" style="display:none">
+    <div ng-repeat="book in content | filter:query.input" id="unique" style="display:none">
         <div class="circlebutton" style="position:relative;right:5px;">&#43</div>
-        <div class="item">
+        <div class="item" ng-click="tab(book.SKU);">
             <i class="badgeJohnson">{{book.title}}</i>
             <p class="text" style="color:#F7FF00;">
             Course Name: {{book.course}}<br>
@@ -20,6 +20,32 @@
         </div>
 	</div>
 </script> 
+<script type="text/ng-template" id="detail.html">
+    <i class="badgeJohnson custom" id="skudisplay" style="color:yellow;background:#66cc33;pointer-events: none;">SKU: {{currentBookDetail.SKU}}</i>
+
+        <div class="row" style="max-height:10%;height:10%;margin-bottom:20px;">
+          <div class="col col-md-6">
+            <img id="bookDetailImage" src="{{currentBookDetail.image}}">
+          </div>
+          <div class="col col-md-6">
+              <br>
+              <i class="badgeJohnson custom" style="background-color:dark;color:gold;">{{currentBookDetail.course}}</i>
+              <br>
+              <i class="badgeJohnson custom">${{currentBookDetail.originalPrice}}</i>
+              <br>
+              <i class="iosStatusBox" ng-click="postPostDialog();">{{currentBookDetail.status}}</i>
+          </div>
+        </div>
+         <div class="item item-divider" style="background-color:orange;color:black;border-radius:10px;text-align:center;">Viewed by {{currentBookDetail.SKU[0]}} people & {{currentBookDetail.SKU[1]}} successful trade</div>
+
+        <div class="item item-divider" style="background-color:red;color:yellow;margin-top:10px;border-radius:10px;text-align:center;">Posted for Sale</div>
+        <div ng-repeat="detail in post" ng-click="tab('payment')">
+                <div class="item item-icon-right" style="background-color:grey;border-bottom:2px solid purple;color:yellow">
+                    <i class="badgeJohnson" style="width: 150px">{{detail.Name}}</i>
+                    Price: ${{detail.Price}} 
+                </div>
+            </div>     
+</script>
 <script type="text/ng-template" id="payment.html">
     <div style="text-align:center;" ng-click="tab('buy')">
     <img id="watcard" src="http://www.watcard.uwaterloo.ca/images/banner_full.png"/>
