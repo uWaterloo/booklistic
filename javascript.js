@@ -33,10 +33,12 @@ angular.module('portalApp')
                angular.element(buyitem).css('display','none');
             }
   		});  
+        $scope.myBookStatus = 'In hand';
         $scope.setPrice=function(){
             var price = prompt("Please set a price you want to sell");
     		if (price != null && price >= 0) {
                 alert("You have set the price to be $" + price);
+                $scope.myBookStatus = 'Listed';
     		} else {
             	alert("The price you entered is not a valid price");
             }
