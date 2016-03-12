@@ -7,6 +7,18 @@
     color:white;
     margin-bottom:25px;
 } 
+#profile-image {
+    display: block;
+    z-index:1000;
+    border-radius: 50%; 
+    width: 20%;
+    border: 2px solid #f8f8f8; 
+    box-shadow: 0 0 0 3px #43cee6;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}  
 .searchBar{
 	color:dark;
     border:2px solid red;
