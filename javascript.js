@@ -17,7 +17,8 @@ angular.module('portalApp')
 
         // Show main view in the first column
         $scope.portalHelpers.showView('main.html', 1);
- 
+ 		
+    $scope.query={};
         $scope.tab = function(scenario) { 
             if (scenario == 'sell') {
                  $scope.portalHelpers.showView("sell.html", 2);
