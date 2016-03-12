@@ -19,10 +19,20 @@ angular.module('portalApp')
         $scope.portalHelpers.showView('main.html', 1);
  		
     	$scope.query={};
-        var buyitem=document.getElementById('buyitem');
+         
     	$scope.clearSearch=function(){
             $scope.query.input='';
         }
+        $scope.$watch('query.input', function(newvalue, oldvalue) {
+            var buyitem=document.getElementById('unique'); 
+            if(newvalue!=undefined && newvalue!=''){
+                console.log('show');
+                angular.element(buyitem).css('display','block');
+            }else{
+                console.log('hide');
+               angular.element(buyitem).css('display','none');
+            }
+  		});   
         $scope.tab = function(scenario) { 
             if (scenario == 'sell') {
                  $scope.portalHelpers.showView("sell.html", 1);
