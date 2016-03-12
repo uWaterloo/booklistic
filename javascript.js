@@ -32,7 +32,15 @@ angular.module('portalApp')
                 console.log('hide');
                angular.element(buyitem).css('display','none');
             }
-  		});   
+  		});  
+        $scope.setPrice=function(){
+            var price = prompt("Please set a price you want to sell");
+    		if (price != null && price >= 0) {
+                alert("You have set the price to be $" + price);
+    		} else {
+            	alert("The price you entered is not a valid price");
+            }
+        }
         $scope.tab = function(scenario) { 
             if (scenario == 'sell') {
                  $scope.portalHelpers.showView("sell.html", 1);
