@@ -11,6 +11,12 @@
     border-radius:50%;
     background-color:red;
     color:white;
+    font-weight:bold; 
+    height:50px;
+    width:50px;
+    text-align:center;
+    border:1px solid white;
+    vertical-align:middle;
 }
 .item{
 	background-color:grey;
