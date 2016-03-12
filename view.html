@@ -5,7 +5,8 @@
            <input type="text" ng-model="query.input" placeholder="Search in Booklistic Market" style="margin-left:5%;"/>
           </label>
 	</div>
-    <div ng-repeat="book in content | filter:query.input" id="buyitem" ng-click="tab("payment")">
+    <div ng-repeat="book in content | filter:query.input" id="buyitem" ng-click="tab('payment')" style="display:none">
+        <div class="circlebutton" style="position:relative;right:5px;">&#43</div>
         <div class="item">
             <i class="badgeJohnson">{{book.title}}</i>
             <p class="text" style="color:#F7FF00;">
@@ -14,13 +15,16 @@
             <br>
             SKU #: {{book.SKU}}
             </p>
+                 
             <img class="images" src="{{book.image}}"/> 
         </div>
 	</div>
 </script> 
 <script type="text/ng-template" id="payment.html">
+    <div style="text-align:center;" ng-click="tab('buy')">
     <img id="watcard" src="http://www.watcard.uwaterloo.ca/images/banner_full.png"/>
     <img id="paypal" src="http://www.hamsaashramam.org/wp-content/uploads/2012/08/PayPal-logo.png"/>
+    </div>
 </script>
 
 <script type="text/ng-template" id="sell.html">
