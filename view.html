@@ -8,13 +8,13 @@
     <div ng-repeat="book in content | filter:query.input" id="buyitem">
         <div class="item">
             <i class="badgeJohnson">{{book.title}}</i>
-            <img class="images" src="{{book.image}}"/> 
-            Course Name: {{book.course}}<br/>
+            <p class="text" style="color:#F7FF00;">
+            Course Name: {{book.course}}<br>
             Price: ${{book.originalPrice}} 
-            &nbsp;
-            &nbsp;
-            &nbsp;
+            <br>
             SKU #: {{book.SKU}}
+            </p>
+            <img class="images" src="{{book.image}}"/> 
         </div>
 	</div>
 </script>  
@@ -32,12 +32,13 @@
         <div class="item">
             <i class="badgeJohnson">{{content[1].title}}</i>
             <img class="images" src="{{content[1].image}}"/> 
-            Course Name: {{content[1].course}}<br/>
+            <p class="text">Course Name: {{content[1].course}}<br/>
             Price: ${{content[1].originalPrice}} 
             &nbsp;
             &nbsp;
             &nbsp;
             SKU #: {{content[1].SKU}}
+            </p>
         </div>
 	</div>
 </script>
