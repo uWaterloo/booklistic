@@ -10,8 +10,12 @@
         <div class="item">
             <i class="badgeJohnson">{{book.title}}</i>
             <img class="images" src="{{book.image}}"/> 
-            <i> </i>
-            
+            Course Name: {{book.course}}<br/>
+            Price: ${{book.originalPrice}} 
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            SKU #: {{book.SKU}}
         </div>
 	</div>
 </script>  
@@ -27,8 +31,14 @@
     <div id="header">My Book</div>  
     <div id="mybookitem">
         <div class="item">
-             <i class="badgeJohnson">{{content[1].title}}</i>
+            <i class="badgeJohnson">{{content[1].title}}</i>
             <img class="images" src="{{content[1].image}}"/> 
+            Course Name: {{content[1].course}}<br/>
+            Price: ${{content[1].originalPrice}} 
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            SKU #: {{content[1].SKU}}
         </div>
 	</div>
 </script>

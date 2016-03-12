@@ -84,6 +84,7 @@ angular.module('portalApp')
     course: 'PHYS 435',
     status: 'sold',
     image: 'http://www.gatecounsellor.com/books/images/solid-state-physics-e1-9788177098594.jpg',
+    SKU: '9780334650215',
     originalPrice: 213.95,
     "listing": [
     {"Name":"John Doe", "Price":"11.00"},
