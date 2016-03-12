@@ -21,9 +21,13 @@ angular.module('portalApp')
         $scope.headertext = 'Buy';
         $scope.tab = function(scenario) {
             if (scenario == 'sell') {
-                $scope.headertext = 'Sell';
+                $scope.headertext = 'Sell';  
+                $scope.current = null;
+                alert($scope.current);
             } else if (scenario == 'mybook') {
                 $scope.headertext = 'My Book';
+                var step = $scope.content[1];
+                alert($scope.current);
             } else if (scenario == 'buy') {
                 $scope.headertext = 'Buy';
             }
@@ -39,7 +43,7 @@ angular.module('portalApp')
     "listing": [
     {"Name":"Emily Kemps", "Price":"32.99"},
     {"Name":"Victoria Husslage", "Price":"25.99"},
-    {"Name":"Nora Roberts", "Price":"33.59"}
+    {"Name":"Natasha Wall", "Price":"33.59"}
     ],
     "history": [
     {"Name":"Victoria Husslage", "Price":"25.99"},
