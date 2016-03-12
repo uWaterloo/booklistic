@@ -16,7 +16,7 @@ angular.module('portalApp')
         booklisticFactory.init($scope);
 
         // Show main view in the first column
-        $scope.portalHelpers.showView('main.html', 1);
+        $scope.portalHelpers.showView('sell.html', 1);
  
         $scope.tab = function(scenario) { 
             if (scenario == 'sell') {
