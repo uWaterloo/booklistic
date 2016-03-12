@@ -34,6 +34,8 @@
     line-height:45px;
     right:5%;
     float:right;
+    top:45px;
+    position:absolute;
 }
 .item{
 	background-color:grey;
