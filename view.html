@@ -63,10 +63,10 @@
             <i class="badgeJohnson">{{content[1].title}}</i>
             <img class="images" src="{{content[1].image}}"/> 
             <p class="text" style="color:#F7FF00;">Course Name: {{content[1].course}}<br/>
-            Price: ${{content[1].originalPrice}} 
+            Original Price: ${{content[1].originalPrice}} 
             <br> 
             SKU #: {{content[1].SKU}}
-                <br><div style="color:red;">In Hand </div>
+                <br><div style="color:red;">{{myBookStatus}}</div>
             </p>
         </div>
 	</div>
@@ -85,7 +85,7 @@
             <br> 
             SKU #: {{content[1].SKU}}
             <br>
-            <div style="color:red;">In Hand </div>  
+            <div style="color:red;">{{myBookStatus}}</div>  
                 Condition: Used
             </p>
         </div>
@@ -97,7 +97,7 @@
             <br> 
             SKU #: {{content[6].SKU}}
             <br>
-            <div style="color:red;">Sold </div> 
+            <div style="color:red;">Sold for $40</div> 
             Condition: Good
             </p>
         </div>
