@@ -5,7 +5,7 @@
            <input type="text" ng-model="query.input" placeholder="Search in Booklistic Market" style="margin-left:5%;"/>
           </label>
 	</div>
-    <div ng-repeat="book in content | filter:query.input" id="buyitem">
+    <div ng-repeat="book in content | filter:query.input" id="buyitem" ng-click="tab("payment")">
         <div class="item">
             <i class="badgeJohnson">{{book.title}}</i>
             <p class="text" style="color:#F7FF00;">
@@ -17,27 +17,17 @@
             <img class="images" src="{{book.image}}"/> 
         </div>
 	</div>
-</script>  
+</script> 
+<script type="text/ng-template" id="payment.html">
+    <img id="watcard" src="http://www.watcard.uwaterloo.ca/images/banner_full.png"/>
+    <img id="paypal" src="http://www.hamsaashramam.org/wp-content/uploads/2012/08/PayPal-logo.png"/>
+</script>
 
 <script type="text/ng-template" id="sell.html">
     <div id="header">Sell</div>  
-    <div id="sellitem" style="backround-color:red;top:45px;position:relative;">
-        <button class="circlebutton">&#43</button>
-	</div>  
-    <div id="mybookitem">
-        <div class="item">
-            <i class="badgeJohnson">{{content[1].title}}</i>
-            <img class="images" src="{{content[1].image}}"/> 
-            <p class="text" style="color:#F7FF00;">Course Name: {{content[1].course}}<br/>
-            Price: ${{content[1].originalPrice}} 
-            <br> 
-            SKU #: {{content[1].SKU}}
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <div style="color:red;">In Hand</div>
-            </p>
-        </div>
-	</div>
+    <div id="sellitem" style="backround-color:red;">
+        <div class="circlebutton">&#43</div>
+	</div> 
 </script>
 
 <script type="text/ng-template" id="mybook.html"> 
@@ -50,9 +40,6 @@
             Price: ${{content[1].originalPrice}} 
             <br> 
             SKU #: {{content[1].SKU}}
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <div style="color:red;">In Hand</div>
             </p>
         </div>
 	</div>
