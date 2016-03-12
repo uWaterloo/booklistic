@@ -41,6 +41,8 @@ angular.module('portalApp')
             	alert("The price you entered is not a valid price");
             }
         }
+        $scope.currentBookDetail;
+        $scope.post;
         $scope.tab = function(scenario) { 
             if (scenario == 'sell') {
                  $scope.portalHelpers.showView("sell.html", 1);
@@ -49,7 +51,17 @@ angular.module('portalApp')
             } else if (scenario == 'buy') { 
                 $scope.portalHelpers.showView("main.html", 1);
             } else if (scenario == 'payment') {
-            	$scope.portalHelpers.showView("payment.html", 1);
+            	$scope.portalHelpers.showView("payment.html", 3);
+            }else {
+                var step=$scope.content;
+            	for(var i = 0; i < step.length; i++) {
+  					if (step[i].SKU == scenario) {
+  					$scope.currentBookDetail = step[i]; 
+                    $scope.post = step[i].listing;
+  					break;
+  					}
+  				}
+                $scope.portalHelpers.showView("detail.html",2);
             }
         }
     $scope.portalHelpers.invokeServerFunction('getUserName').then(function(data){

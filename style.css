@@ -81,6 +81,23 @@
     overflow:hidden;
     text-overflow:ellipsis;
 }
+.iosStatusBox{
+    position:absolute;
+    background-color:transparent;
+    border:2px solid transparent;
+    box-shadow: 0 0 0 2px red;
+    color:dark;
+    font-weight:bold;
+    border-radius:8px;
+    float:right;
+    right:3%;
+}
+.badgeJohnson .custom{
+    margin-bottom:2%;
+    background-color:red;
+    display:table;
+    min-width:0px;
+}
 .images {
     width: 12%;
     max-width: 80px;
