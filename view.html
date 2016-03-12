@@ -29,15 +29,15 @@
           </div>
           <div class="col col-md-6">
               <br>
-              <i class="badgeJohnson custom" style="background-color:dark;color:gold;">{{currentBookDetail.course}}</i>
+              <i class="badgeJohnson custom" style="background-color:dark;color:gold;">Course Name: {{currentBookDetail.course}}</i>
               <br>
-              <i class="badgeJohnson custom">${{currentBookDetail.originalPrice}}</i>
+              <i class="badgeJohnson custom">Original Price: ${{currentBookDetail.originalPrice}}</i>
               <br>
           </div>
         </div>
          <div class="item item-divider" style="background-color:orange;color:black;border-radius:10px;text-align:center;">Viewed by {{currentBookDetail.SKU[0]}} people & {{currentBookDetail.SKU[1]}} successful trade</div>
 
-        <div class="item item-divider" style="background-color:red;color:yellow;margin-top:10px;border-radius:10px;text-align:center;">Posted for Sale</div>
+        <div class="item item-divider" style="background-color:red;color:yellow;margin-top:10px;border-radius:10px;text-align:center;">Used Books Posted for Sale</div>
         <div ng-repeat="detail in post" ng-click="tab('payment')">
                 <div class="item item-icon-right" style="background-color:grey;border-bottom:2px solid purple;color:yellow">
                     <i class="badgeJohnson" style="width: 150px">{{detail.Name}}</i>
