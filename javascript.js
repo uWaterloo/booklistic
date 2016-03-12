@@ -24,11 +24,14 @@ angular.module('portalApp')
         }
         $scope.tab = function(scenario) { 
             if (scenario == 'sell') {
-                 $scope.portalHelpers.showView("sell.html", 2);
+                 $scope.portalHelpers.showView("sell.html", 1);
             } else if (scenario == 'mybook') { 
-                $scope.portalHelpers.showView("mybook.html", 2);
+                $scope.portalHelpers.showView("mybook.html", 1);
             } else if (scenario == 'buy') { 
-                $scope.portalHelpers.showView("main.html", 2);
+                $scope.portalHelpers.showView("main.html", 1);
+            } else if (scenario == 'payment') {
+                alert("hello");
+            	$scope.portalHelpers.showView("payment.html", 1);
             }
         }
       $scope.content= [{

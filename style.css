@@ -11,6 +11,7 @@
 	color:dark;
     border:2px solid red;
     border-bottom:none;
+    background-color:white;
 }
 .searchBar label{
 	width:100%;
