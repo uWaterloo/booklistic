@@ -1,9 +1,24 @@
 <script type="text/ng-template" id="main.html">
 	<div id="header">{{headertext}}</div> 
-    <div ng-repeat="book in content">
+	<!--Buy Item -->
+ 
+    <div ng-repeat="book in content" id="buyitem">
         <div class="item">
             <img class="images" src="{{book.image}}"/> 
             <i class="badgeJohnson">{{book.title}}</i>
+        </div>
+	</div>
+         
+    <!--Sell Item -->
+    <div id="sellitem" style="backround-color:red;">
+        red
+	</div>
+    
+    <!--My Book Item -->
+    <div id="mybookitem">
+        <div class="item">
+            <img class="images" src="{{content[1].image}}"/> 
+            <i class="badgeJohnson">{{content[1].title}}</i>
         </div>
 	</div>
 </script>
