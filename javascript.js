@@ -19,6 +19,7 @@ angular.module('portalApp')
         $scope.portalHelpers.showView('main.html', 1);
  		
     	$scope.query={};
+        var buyitem=document.getElementById('buyitem');
     	$scope.clearSearch=function(){
             $scope.query.input='';
         }
@@ -30,7 +31,6 @@ angular.module('portalApp')
             } else if (scenario == 'buy') { 
                 $scope.portalHelpers.showView("main.html", 1);
             } else if (scenario == 'payment') {
-                alert("hello");
             	$scope.portalHelpers.showView("payment.html", 1);
             }
         }
