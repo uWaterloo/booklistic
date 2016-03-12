@@ -1,20 +1,22 @@
 <script type="text/ng-template" id="main.html">
-	<div id="header">{{headertext}}</div> 
-	<!--Buy Item -->
- 
+	<div id="header">Buy</div>  
     <div ng-repeat="book in content" id="buyitem">
         <div class="item">
             <img class="images" src="{{book.image}}"/> 
             <i class="badgeJohnson">{{book.title}}</i>
         </div>
 	</div>
-         
-    <!--Sell Item -->
+</script>  
+
+<script type="text/ng-template" id="sell.html">
+    <div id="header">Sell</div>  
     <div id="sellitem" style="backround-color:red;">
         red
-	</div>
-    
-    <!--My Book Item -->
+	</div> 
+</script>
+
+<script type="text/ng-template" id="mybook.html"> 
+    <div id="header">My Book</div>  
     <div id="mybookitem">
         <div class="item">
             <img class="images" src="{{content[1].image}}"/> 
@@ -22,6 +24,7 @@
         </div>
 	</div>
 </script>
+
 
 <!-- Menu template -->
 <script type="text/ng-template" id="widgetMenu.html">
